@@ -91,9 +91,7 @@
          Wifi interfaces.  If the device doesn't want to support tethering over Wifi this
          should be empty.  An example would be "softap.*" -->
  <string-array translatable="false" name="config_tether_wifi_regexs">
-  <!--  <item>wl.*</item>
-        <item>tiwlan.*</item>
-        <item>tiap.*</item> -->
+        <item>wl.*</item>
     </string-array>
 
     <!-- Dhcp range (min, max) to use for tethering purposes -->
@@ -352,5 +350,8 @@
 
     <!-- Enables SIP on WIFI only -->
     <bool name="config_sip_wifi_only">false</bool>
+
+    <!-- Fix RIL -->
+    <bool name="config_rilHasExtraField">true</bool>
 
 </resources>
