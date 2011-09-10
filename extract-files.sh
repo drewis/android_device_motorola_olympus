@@ -48,6 +48,7 @@ adb pull /system/lib/libam2server.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 
 # system libs
 adb pull /system/lib/libmirror.so ../../../vendor/$VENDOR/$DEVICE/proprietary/lib
+adb pull /system/lib/libextdisp.so ../../../vendor/$VENDOR/$DEVICE/proprietary/lib
 adb pull /system/lib/libaudio.so ../../../vendor/$VENDOR/$DEVICE/proprietary/lib
 adb pull /system/lib/libaudiopolicy.so ../../../vendor/$VENDOR/$DEVICE/proprietary/lib
 adb pull /system/lib/libcgdrv.so ../../../vendor/$VENDOR/$DEVICE/proprietary/lib
@@ -195,6 +196,7 @@ adb pull /system/bin/chat-ril ../../../vendor/$VENDOR/$DEVICE/proprietary/bin
 adb pull /system/bin/ftmipcd ../../../vendor/$VENDOR/$DEVICE/proprietary/bin
 adb pull /system/bin/usbd ../../../vendor/$VENDOR/$DEVICE/proprietary/bin
 adb pull /system/bin/akmd2 ../../../vendor/$VENDOR/$DEVICE/proprietary/bin
+adb pull /system/bin/whisperd ../../../vendor/$VENDOR/$DEVICE/proprietary/bin
 
 # Pull BT files
 adb pull /system/bin/bt_init ../../../vendor/$VENDOR/$DEVICE/proprietary/bin
@@ -258,5 +260,6 @@ wget "${BASEURL}com.motorola.android.imirrorservice.jar" -O ../../../vendor/$VEN
 wget "${BASEURL}libmirrorjni.so" -O ../../../vendor/$VENDOR/$DEVICE/proprietary/lib/libmirrorjni.so
 wget "${BASEURL}MirrorService.apk" -O ../../../vendor/$VENDOR/$DEVICE/proprietary/app/MirrorService.apk
 wget "${BASEURL}libnvdispmgr_d.so" -O ../../../vendor/$VENDOR/$DEVICE/proprietary/lib/libnvdispmgr_d.so
+wget "${BASEURL}libhdmi.so" -O ../../../vendor/$VENDOR/$DEVICE/proprietary/lib/libhdmi.so
 
 ./setup-makefiles.sh

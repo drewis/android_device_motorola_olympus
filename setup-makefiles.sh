@@ -105,6 +105,7 @@ PRODUCT_COPY_FILES += \\
     vendor/__VENDOR__/__DEVICE__/proprietary/bin/remountpds:system/bin/remountpds \\
     vendor/__VENDOR__/__DEVICE__/proprietary/bin/battd:system/bin/battd \\
     vendor/__VENDOR__/__DEVICE__/proprietary/bin/usbd:system/bin/usbd \\
+    vendor/__VENDOR__/__DEVICE__/proprietary/bin/whisperd:system/bin/whisperd \\
     vendor/__VENDOR__/__DEVICE__/proprietary/bin/mdm_panicd:system/bin/mdm_panicd \\
     vendor/__VENDOR__/__DEVICE__/proprietary/bin/rild:system/bin/rild \\
     vendor/__VENDOR__/__DEVICE__/proprietary/bin/pppd:system/bin/pppd \\
@@ -136,6 +137,8 @@ PRODUCT_COPY_FILES += \\
 # system libs
 PRODUCT_COPY_FILES += \\
     vendor/__VENDOR__/__DEVICE__/proprietary/lib/libmirror.so:system/lib/libmirror.so \\
+    vendor/__VENDOR__/__DEVICE__/proprietary/lib/libextdisp.so:system/lib/libextdisp.so \\
+    vendor/__VENDOR__/__DEVICE__/proprietary/lib/libhdmi.so:system/lib/libhdmi.so \\
     vendor/__VENDOR__/__DEVICE__/proprietary/lib/libnvwsi.so:system/lib/libnvwsi.so \\
     vendor/__VENDOR__/__DEVICE__/proprietary/lib/libnvddk_2d_v2.so:system/lib/libnvddk_2d_v2.so \\
     vendor/__VENDOR__/__DEVICE__/proprietary/lib/libnvrm.so:system/lib/libnvrm.so \\
